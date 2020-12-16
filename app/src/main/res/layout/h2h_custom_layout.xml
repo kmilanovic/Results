@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <View
+        android:id="@+id/vertical_separator"
+        android:layout_width="2dp"
+        android:layout_height="50dp"
+        android:background="#808080"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vertical_separator2"
+        android:layout_width="2dp"
+        android:layout_height="50dp"
+        android:background="#808080"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_wins" />
+
+    <View
+        android:id="@+id/vertical_separator3"
+        android:layout_width="2dp"
+        android:layout_height="50dp"
+        android:background="#808080"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_numberOfHomeDraws" />
+
+    <View
+        android:id="@+id/horizontal_separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#808080"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator" />
+
+    <View
+        android:id="@+id/horizontal_separator2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#808080"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/vertical_separator2" />
+
+    <View
+        android:id="@+id/horizontal_separator3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#808080"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator2" />
+
+    <View
+        android:id="@+id/horizontal_separator4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#808080"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/vertical_separator3" />
+
+    <View
+        android:id="@+id/horizontal_separator5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#808080"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vertical_separator3" />
+
+
+    <View
+        android:id="@+id/horizontal_separator6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#808080"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_loses" />
+
+
+    <TextView
+        android:id="@+id/text_home_team"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/hint_home_team"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_separator"
+        app:layout_constraintEnd_toStartOf="@id/vertical_separator" />
+
+    <TextView
+        android:id="@+id/text_away_team"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/hint_away_team"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_separator"/>
+
+    <TextView
+        android:id="@+id/text_draws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Draws"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator2"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_numberOfHomeDraws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator2"
+        app:layout_constraintStart_toEndOf="@id/text_home_team"
+        app:layout_constraintEnd_toStartOf="@id/text_home_team" />
+
+    <TextView
+        android:id="@+id/text_numberOfAwayDraws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator2"
+        app:layout_constraintStart_toEndOf="@id/text_away_team"
+        app:layout_constraintEnd_toStartOf="@id/text_away_team" />
+
+    <TextView
+        android:id="@+id/text_wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Wins"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_numberOfHomeTeamWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        app:layout_constraintEnd_toEndOf="@id/text_home_team"
+        app:layout_constraintStart_toStartOf="@id/text_home_team"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator" />
+
+    <TextView
+        android:id="@+id/text_numberOfAwayTeamWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator"
+        app:layout_constraintStart_toEndOf="@id/text_away_team"
+        app:layout_constraintEnd_toStartOf="@id/text_away_team" />
+
+    <TextView
+        android:id="@+id/text_loses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Loses"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator3"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_numberOfHomeLoses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator3"
+        app:layout_constraintStart_toEndOf="@id/text_home_team"
+        app:layout_constraintEnd_toStartOf="@id/text_home_team" />
+
+    <TextView
+        android:id="@+id/text_numberOfAwayLoses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        app:layout_constraintTop_toBottomOf="@id/vertical_separator3"
+        app:layout_constraintStart_toEndOf="@id/text_away_team"
+        app:layout_constraintEnd_toStartOf="@id/text_away_team" />
+
+    <TextView
+        android:id="@+id/text_goalsScored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:text="Total goals scored: "
+        app:layout_constraintTop_toBottomOf="@id/horizontal_separator6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_numberOfGoalsScored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="30"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_separator6"
+        app:layout_constraintStart_toEndOf="@id/text_goalsScored" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
